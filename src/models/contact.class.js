@@ -2,12 +2,12 @@ export class Contact {
   name = "";
   surname = "";
   mail = "";
-  conected = false;
+  connected = false;
 
-  constructor(name, surname, mail, conected) {
+  constructor(name, surname, mail, connected) {
     this.name = name;
     this.surname = surname;
     this.mail = mail;
-    this.conected = conected;
+    this.connected = connected;
   }
 }
