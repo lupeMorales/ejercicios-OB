@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+let intervalColor;
 
 const Square = () => {
   const [backGround, setBackGround] = useState("black");
@@ -17,17 +18,19 @@ const Square = () => {
     for (let i = 0; i < 6; i++) {
       hexColor += hex[getRandomNumber()];
     }
-    return hexColor;
+    console.log(hexColor);
+    return setBackGround(hexColor);
   };
 
   const showRandomColor = () => {
-    setBackGround(getRandomColor);
+    intervalColor = setInterval(getRandomColor, 1000);
   };
   const showInitialColor = () => {
     setBackGround("black");
+    clearInterval(intervalColor);
   };
   const stopRandonize = () => {
-    console.log("stop randonize");
+    clearInterval(intervalColor);
   };
   return (
     <div
