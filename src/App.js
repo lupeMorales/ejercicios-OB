@@ -3,7 +3,8 @@ import "./App.css";
 /* import Clock from "./components/Clock";
 import ClockTipoFuncion from "./components/ClockTipoFuncion"; */
 /* import ContactList from "./components/contactList"; */
-import Square from "./components/ejercicio10_11_12";
+/* import Square from "./components/ejercicio10_11_12"; */
+import TaskFormFormik from "./components/form/taskFormFormik";
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
         <ClockTipoFuncion /> */}
         {/*  <ContactList /> */}
         {/* exercise 10-11-12 */}
-        <Square />
+        {/*   <Square /> */}
+        {/* exercise 13-14-15 FORMIK FORM */}
+        <TaskFormFormik />
       </header>
     </div>
   );
