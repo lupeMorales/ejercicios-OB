@@ -13,7 +13,7 @@ const TaskFormFormik = () => {
   const taskSchema = Yup.object().shape({
     name: Yup.string().max(12, "Task too long").required("Task is required"),
     description: Yup.string().max(40, "Task too long"),
-    level: Yup.LEVELS(),
+    level: Yup.string().oneOf[(LEVELS.BLOCKING, LEVELS.NORMAL, LEVELS.URGENT)],
   });
   return (
     <div>
